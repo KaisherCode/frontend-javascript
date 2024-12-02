@@ -26,3 +26,14 @@ const orderProduct = cod => {
 }
 
 const viewOrder = () => order
+
+const calculateCost = () => {
+  if (order.length === 0) return "Tu pedido está vacío"
+
+  costoTotal = 0
+  for (product of order) {
+    costoTotal += product.price
+  }
+  user.deuda = costoTotal
+  return costoTotal
+}
