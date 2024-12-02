@@ -4,7 +4,7 @@ const user = {
   deuda: 0
 }
 
-const order = []
+let order = []
 
 const showMenu = () => {
   console.log(`CÓDIGO - NOMBRE PRODUCTO - PRECIO`)
@@ -36,4 +36,12 @@ const calculateCost = () => {
   }
   user.deuda = costoTotal
   return costoTotal
+}
+
+const completeOrder = () => {
+  calculateCost()
+
+  order = []
+  costoTotal = 0
+  return `${user.userName}, tu deuda total a pagar es: S/ ${user.deuda} soles`
 }
