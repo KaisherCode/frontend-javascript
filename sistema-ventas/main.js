@@ -1,3 +1,12 @@
+/**
+ * 1. Mostrar el menú disponible
+ * 2. Permitir que el usuario pida lista de menú
+ * 3. Mostrar el costo total que el usuario debe pagar
+ * 4. Cobrar al usuario
+ * 5. Reportar el monto total de las ventas realizadas.
+ */
+
+// Client
 const user = {
   userName: "Kaisher",
   edad: 32,
@@ -48,18 +57,23 @@ const completeOrder = () => {
 }
 
 const payOrder = amountProvided => {
-  if (amountProvided < user.deuda) {
-    return `No te alcanza para pagar tu pedido. Te faltan ${user.deuda - amountProvided}`
-  } else if (amountProvided === user.deuda) {
-    salesAmount += user.deuda
-    user.deuda = 0
-    return `Tu deuda a sido pagado. Garcias por su compra!`
-  } else {
-    const returned = amountProvided - user.deuda
-    salesAmount += user.deuda
-    user.deuda = 0
-    return `Tu pedido ha sido pagado. Tu vuelto es de S/ ${returned}`
+  if (typeof amountProvided ==="number"){
+    if (amountProvided < user.deuda) {
+      return `No te alcanza para pagar tu pedido. Te faltan ${user.deuda - amountProvided}`
+    } else if (amountProvided === user.deuda) {
+      salesAmount += user.deuda
+      user.deuda = 0
+      return `Tu deuda a sido pagado. Garcias por su compra!`
+    } else {
+      const returned = amountProvided - user.deuda
+      salesAmount += user.deuda
+      user.deuda = 0
+      return `Tu pedido ha sido pagado. Tu vuelto es de S/ ${returned}`
+    }
+  } else{
+    return `Ingrese un monto válido`
   }
+  
 }
 
 const viewSalesAmount = () => `Total de ventas realizadas S/ ${salesAmount}`
