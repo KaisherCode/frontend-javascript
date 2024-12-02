@@ -5,6 +5,7 @@ const user = {
 }
 
 let order = []
+let salesAmount = 0
 
 const showMenu = () => {
   console.log(`CÓDIGO - NOMBRE PRODUCTO - PRECIO`)
@@ -45,3 +46,20 @@ const completeOrder = () => {
   costoTotal = 0
   return `${user.userName}, tu deuda total a pagar es: S/ ${user.deuda} soles`
 }
+
+const payOrder = amountProvided => {
+  if (amountProvided < user.deuda) {
+    return `No te alcanza para pagar tu pedido. Te faltan ${user.deuda - amountProvided}`
+  } else if (amountProvided === user.deuda) {
+    salesAmount += user.deuda
+    user.deuda = 0
+    return `Tu deuda a sido pagado. Garcias por su compra!`
+  } else {
+    const returned = amountProvided - user.deuda
+    salesAmount += user.deuda
+    user.deuda = 0
+    return `Tu pedido ha sido pagado. Tu vuelto es de S/ ${returned}`
+  }
+}
+
+const viewSalesAmount = () => `Total de ventas realizadas S/ ${salesAmount}`
