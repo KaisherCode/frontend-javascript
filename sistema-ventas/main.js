@@ -22,6 +22,7 @@ const orderProduct = cod => {
 
   order.push(productFound)
   console.log("El producto ha sido agregado a su pedido. Su pedido es:")
-  return order
+  return viewOrder()
 }
 
+const viewOrder = () => order
