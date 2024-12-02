@@ -1,3 +1,6 @@
+/**
+ * List of all items on the restaurant menu
+ */
 const products = [
   {
     id: "H100",
