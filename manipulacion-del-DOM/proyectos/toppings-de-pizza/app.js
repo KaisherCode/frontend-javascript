@@ -25,3 +25,6 @@ console.log(link[0].getAttribute('href'));
 
 console.log(link[0].removeAttribute('href'));
 console.log(link[0].setAttribute('href','https://freecodecamp.org/'))
+
+firstTopping.classList.add('text-gold')
+onsole.log(firstTopping.classList);
