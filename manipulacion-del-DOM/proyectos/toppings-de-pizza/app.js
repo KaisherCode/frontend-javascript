@@ -17,5 +17,5 @@ console.log(listToppings.textContent);
 console.log('> innerHTML');
 console.log(listToppings.innerHTML);
 
-const title = document.getElementById('title');
-title.innerText = "Mis Toppings Favoritos";
+// const title = document.getElementById('title');
+// title.innerText = "Mis Toppings Favoritos";
