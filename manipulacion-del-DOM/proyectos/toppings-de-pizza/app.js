@@ -19,3 +19,9 @@ console.log(listToppings.innerHTML);
 
 // const title = document.getElementById('title');
 // title.innerText = "Mis Toppings Favoritos";
+
+const link = document.getElementsByTagName('a');
+console.log(link[0].getAttribute('href'));
+
+console.log(link[0].removeAttribute('href'));
+console.log(link[0].setAttribute('href','https://freecodecamp.org/'))
