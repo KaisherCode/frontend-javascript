@@ -30,3 +30,5 @@ firstTopping.classList.add('text-gold');
 console.log(firstTopping.classList);
 
 console.log(firstTopping.classList.contains('fondo-marron'));// output: true
+
+firstTopping.classList.remove('text-gold');
