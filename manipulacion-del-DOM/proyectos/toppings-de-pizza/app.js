@@ -28,3 +28,5 @@ console.log(link[0].setAttribute('href','https://freecodecamp.org/'))
 
 firstTopping.classList.add('text-gold');
 console.log(firstTopping.classList);
+
+console.log(firstTopping.classList.contains('fondo-marron'));// output: true
