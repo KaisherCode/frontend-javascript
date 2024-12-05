@@ -32,3 +32,5 @@ console.log(firstTopping.classList);
 console.log(firstTopping.classList.contains('fondo-marron'));// output: true
 
 firstTopping.classList.remove('text-gold');
+
+const newTopping = document.createElement('li');
