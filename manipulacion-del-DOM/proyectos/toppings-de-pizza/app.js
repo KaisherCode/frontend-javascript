@@ -61,3 +61,7 @@ console.log(listToppings.lastElementChild);
 console.log(listToppings.previousElementSibling);
 console.log(listToppings.nextElementSibling);
 console.log(listToppings.firstElementChild.firstElementChild);
+
+function mostrarClick(topping){
+    console.log(topping)
+}
