@@ -38,3 +38,5 @@ const newTopping = document.createElement('li');
 newTopping.classList.add('topping','fondo-marron');
 listToppings.append(newTopping);
 newTopping.innerText = "Queso extra";
+
+newTopping.remove();
