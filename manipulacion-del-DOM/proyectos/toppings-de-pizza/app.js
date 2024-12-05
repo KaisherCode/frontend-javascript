@@ -40,3 +40,11 @@ listToppings.append(newTopping);
 newTopping.innerText = "Queso extra";
 
 newTopping.remove();
+
+/** 
+ * .appendChild()
+ * 
+ * Sirve para agregar elemento al igual que .append()
+ * */
+
+// listToppings.appendChild(newTopping)
