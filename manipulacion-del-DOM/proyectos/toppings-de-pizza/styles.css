@@ -38,6 +38,9 @@ ul {
   padding: 0px 16px;
 }
 
+.link{
+  padding-bottom: 16px;
+}
 .topping {
   display: flex;
   flex-wrap: wrap;
