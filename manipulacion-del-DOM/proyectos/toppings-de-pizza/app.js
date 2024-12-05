@@ -48,3 +48,16 @@ newTopping.remove();
  * */
 
 // listToppings.appendChild(newTopping)
+
+console.log(listToppings.parentElement);
+console.log(listToppings.parentNode);
+console.log(listToppings.parentElement.parentElement);
+console.log(listToppings.children);
+console.log(listToppings.firstChild);
+console.log(listToppings.children[0]);
+console.log(listToppings.lastChild);
+console.log(listToppings.firstElementChild);
+console.log(listToppings.lastElementChild);
+console.log(listToppings.previousElementSibling);
+console.log(listToppings.nextElementSibling);
+console.log(listToppings.firstElementChild.firstElementChild);
