@@ -34,3 +34,7 @@ console.log(firstTopping.classList.contains('fondo-marron'));// output: true
 firstTopping.classList.remove('text-gold');
 
 const newTopping = document.createElement('li');
+
+newTopping.classList.add('topping','fondo-marron');
+listToppings.append(newTopping);
+newTopping.innerText = "Queso extra";
