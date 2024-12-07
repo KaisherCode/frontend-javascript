@@ -46,11 +46,17 @@ button{
   font-size: 50px;
   width: 80px;
   height: 80px;
+  cursor: pointer;
 }
 
-#start-pause-button.start,
+#start-pause-button,
 #start-pause-button.start i{
   background-color: #08e008;
+}
+
+#start-pause-button:hover,
+#start-pause-button.start:hover i{
+  background-color: #0bb20b;
 }
 
 #start-pause-button.pause,
@@ -58,6 +64,15 @@ button{
   background-color: #ffdc00;
 }
 
+#start-pause-button.pause:hover,
+#start-pause-button.pause:hover i{
+  background-color: #dabe08;
+}
+
 #reset-button{
-  background-color: red;
+  background-color: #ebeef0;
+}
+
+#reset-button:hover{
+  background-color: #a1b2ba;
 }
