@@ -1,0 +1,124 @@
+/* Styles geenrales */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0px;
+  background: url("https://plus.unsplash.com/premium_photo-1667587245819-2bea7a93e7a1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.container {
+  width: 700px;
+  min-height: 500px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+input {
+  width: 80%;
+  height: 50px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 25px;
+  border: none;
+  background-color: rgb(245, 243, 243);
+  border-radius: 10px;
+}
+
+input:hover {
+  border: 1px solid rgb(66, 184, 248);
+}
+
+input:focus {
+  outline: transparent;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  color: white;
+  background-color: #1312a8;
+  font-size: 22px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #0c0c7c;
+  color: rgb(186, 182, 182);
+}
+
+#list-task {
+  width: 80%;
+  margin: 20px;
+}
+
+.task {
+  width: 100%;
+  min-height: 70px;
+  font-size: 25px;
+  padding: 10px;
+  margin-top: 10px;
+  color: gray;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  border: none;
+}
+
+.task p {
+  max-width: 350px;
+}
+
+i {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.icon-complete {
+  color: rgb(0, 255, 0);
+}
+
+.icon-deleted {
+  color: gray;
+}
+
+.icon-complete:hover {
+  color: gray;
+}
+
+.icon-deleted:hover {
+  color: #C03221;
+}
